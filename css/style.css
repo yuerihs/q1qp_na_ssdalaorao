@@ -1,0 +1,437 @@
+/*imported fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Open+Sans&family=Playpen+Sans&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400&family=Open+Sans&family=Playpen+Sans&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&family=Open+Sans&family=Playpen+Sans&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;600;800&family=Open+Sans&family=Playpen+Sans&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{/*default margin and padding for all the elements*/
+    margin: 0px;
+    padding: 0px;
+}
+/*styling for the navigation bar*/
+.navbar{
+    background-color: #9fc8de;
+    overflow: hidden;
+    height: 8vh;
+    width: 100vw;
+    border-bottom: solid #224650 3px;
+    top: 0;
+    position: fixed;
+}
+.navbar h2{ /*styling for the title in the navigation bar*/
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+    margin-top: 20px;
+    margin-right: 4em;
+    float: right;
+}
+/*styling for the navigation links*/
+.navbar .links{
+    margin-top: 25px;
+}
+.navbar .navbarlink{
+    color:  #224650;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight:500;
+    text-decoration: none;
+    padding: 30px;
+    transition: 0.2s; 
+}
+.navbar .navbarlink:hover{ /*styling for the animation of navigation links*/
+    transition: 0.2;
+    background-color: #789bae;
+}
+/*styling for the logo in the navigation bar*/
+.navbar #chart{
+    top: 0;
+    margin-top: 10px;
+    margin-left: 95%;
+    position: absolute;
+ }
+.page{ /*styiling for the mother div*/
+    position: absolute;
+    background-image: url(images/pageandsectionbg.png);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+/*styling for the banner section*/
+.main-content{
+    width: 92vw;
+    margin-top: 5em;
+    margin-left: 3em;
+    align-self: center;
+}
+.main-content #hr{ /*styling for the header in the banner section*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 4em;
+}
+.main-content #sh{ /*styling for the subheader in the banner section*/
+    font-family: 'Montserrat', sans-serif;
+    color: #fff8f4;
+    text-shadow: 1px 1px #224650;
+    margin-top: 3px;
+    margin-bottom: 1em;
+}
+.main-content #sh span{ /*styling for the specific part in the subheader in the banner section*/
+    font-family: 'Montserrat', sans-serif;
+    color: #789bae;
+}
+.main-content a{ /*styling for the clickable box link below the headers in the banner section*/
+    background-color: #9fc8de;
+    color: #224650;
+    padding: 5px;
+    margin: 5px;
+    font-weight:500;
+    text-decoration: none;
+    text-align: left;
+    border: 3px solid #224650;
+    opacity: .70;
+    transition: 0.2s;
+}
+.main-content #nextpage{ /*styling for the text in the clickable box link below the headers in the banner section*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.main-content #nextpage:hover{ /*styling for the animation of the text in the clickable box link below the headers in the banner section*/
+    transition: 0.2;
+    color: #fff8f4;
+    background-color: #789bae;
+}
+/*styling for the first section in page2*/
+.main-content2{
+    width: 45vw;
+    margin-top: 5em;
+    margin-left: 3em;
+    align-self: center;
+}
+.main-content2 #hrintro{ /*styling for the introduction heading in the first section of page2*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 3em; 
+}
+.main-content2 #content2{ /*styling for all of the text, inside the first section, after the introduction heading in the first section of page2*/
+    font-family: 'Montserrat', sans-serif;
+}
+#musicplayer{ /*styling for the mini music player in the first section of page2*/
+    margin-top: -40vh;
+    margin-right: 5em;
+    width: 40vw;
+    float: right;
+}
+/*styling for the second section in page2*/
+.discussion{
+    margin-top: -25em;
+    width: 100vw;
+    text-align: center;
+}
+.discussion #hrintro{ /*styling for the discussion heading in the second section of page2*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 3em; 
+}
+.discussion #content3{ /*styling for all of the text after, inside the first section, after the introduction heading in the first section of page2*/
+    font-family: 'Montserrat', sans-serif;
+    width: 50vw;
+    margin-bottom: 2em;
+    margin-left: 25%;
+    text-align: center;
+}
+.discussion a{ /*styling for the clickable box link after the texts in the discussion section*/
+    background-color: #cde6f4;
+    color: #224650;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    border: 3px solid #224650;
+}
+.discussion #sheets{ /*styling for the text in the clickable box after the texts in the discussion section link */
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: 0.2s;
+    margin-top: 5em;
+}
+.discussion #sheets:hover{ /*styling for the animation of the text in the clickable box after the texts in the discussion section link */
+    transition: 0.2;
+    color: #fff8f4;
+    background-color: #789bae;
+}
+/*styling for the third section in page2*/
+.discussion1{
+    margin-top: -10em;
+    width: 100vw;
+    text-align: center;
+}
+.discussion1 #hrintrodata{ /*styling for mini heading in the third section of page2*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #9fc8de;
+    text-shadow: 1px 1px #224650;
+    margin-top: 3em; 
+}
+/*styling for the images inside the third section of page2*/
+.discussion1 #qualigraph{
+    border: #224650 3px solid;
+    margin-top: 3em;
+    margin-right: 5em;
+    float: right;
+}
+.discussion1 #qualigraph2{
+    border: #224650 3px solid;
+    margin-top: 13em;
+    margin-left: 5em;
+    float: left;
+}
+/*styling for the corresponding information or text of the images inside the third section of page2*/
+#graphtext{
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+    width: 60vw;
+    margin-left: 5em;
+    margin-top: 5em;
+    text-align: left;
+}
+#graphtext2{
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+    width: 95vw;
+    margin-top: 15em;
+    margin-right: 5em;
+    text-align: right;
+}
+/*styling for the fourth section in page2*/
+.discussion2{
+    margin-top: -10em;
+    width: 100vw;
+    height: 120vh;
+    text-align: center;
+}
+.discussion2 #hrintrodata{ /*styling for mini heading in the fourth section of page2*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #9fc8de;
+    text-shadow: 1px 1px #224650;
+    margin-top: 3em; 
+}
+/*styling for the images inside the fourth section of page2*/
+.discussion2 #quantigraph{ 
+    border: #224650 3px solid;
+    margin-top: 3em;
+    margin-right: 5em;
+    float: right;
+}
+.discussion2 #quantigraph2{
+    border: #224650 3px solid;
+    margin-top: 18em;
+    margin-left: 5em;
+    float: left;
+}
+/*styling for the corresponding information or text of the images inside the fourth section of page2*/
+#graphtext{
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+    width: 60vw;
+    margin-left: 5em;
+    margin-top: em;
+    text-align: left;
+}
+#graphtext3{
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+    width: 90vw;
+    margin-top: 20em;
+    margin-left:5em;
+    text-align: right;
+}
+/*styling for the conclusion page or page4*/
+.main-content3{
+    width: 45vw;
+    margin-right: 3em;
+    text-align: right;
+    float: right;
+}
+.main-content3 #hrintro{ /*styling for the conclusion heading in the conclusion page*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 3em; 
+}
+.main-content3 #content4{ /*styling for the text after the conclusion heading*/
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2em;
+}
+/*styling for the image beside the texts*/
+.danigif img{ 
+    position: relative;
+    margin-top: 9.5em;
+    width: 33%;
+    margin-left: 3em;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #88b8cf;
+}
+/*styling for the reference page or page4*/
+.main-content4{
+    width: 93vw;
+    margin-top: 5em;
+    margin-left: 3em;
+}
+.main-content4 #hrintroref{ /*styling for the reference heading in the reference page*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 3em; 
+    text-align: center;
+}
+.main-content4 #content5{ /*styling for the texts.links after the reference heading*/
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2em;
+}
+/*styling for the about us section or page5*/
+.main-content5{
+    width: 93vw;
+    margin-top: 5em;
+    margin-left: 3em;
+    text-align: center;
+}
+.main-content5 #hrintro{ /*styling for the mini heading below the navigation bar*/
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #9fc8de;
+    text-shadow: 2px 2px #224650;
+    margin-top: 3em; 
+    text-align: left;
+}
+.me1 #me{ /*styling for the image inside main-contenr 5*/
+    float: left;
+    margin-top: 2em;
+    border: #224650 5px solid;
+}
+.me1 p{ /*styling for the overall orientation of the corresponding information or text of the image inside main-content 5*/
+    float: left;
+    margin-top: 25em;
+}
+.main-content5 #content6{ /*styling for the information or text of the image inside main-content5*/
+    color: #224650;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-left: 30%;
+}
+.main-content5 #content6list{ /*styling for the list of information or text of the image inside main-content5*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-left: 30%;
+}
+.others{ /*styling for the second section of page5*/
+    height: 75vh;
+    margin-top: -20em;
+}
+.otherinfo{ /*styling for the team's orientation appearance as a whole in page5*/
+    margin-top: 10%;
+}
+.team{ /*styling for the researchers orientation in page5*/
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+/*styling for the researchers*/
+.team .researchers{ 
+    margin: 5px;
+    width:40%;
+}
+.researchers h3{ /*styling for the mini heading for the names of the reseachers*/
+    font-family: 'Montserrat', sans-serif;
+    color: #224650;
+}
+.researchers .role{ /*styling for the mini information about the role of that particular researcher*/
+    font-family: 'Montserrat', sans-serif;
+}
+.researchers .info{ /*styling for the texts after the role*/
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+/*styling for the footer section*/
+.footer{
+    overflow: hidden;
+    background-color: #88b8cf;
+    padding:  1.5vw;
+    width: 97vw;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 4vh;
+    border-top: solid #224650 3px;
+    bottom: 0;
+    position: fixed;
+    text-decoration: none;
+}
+.footer p{ /*styling for the copyright text in the footer section*/
+    font-family: 'Montserrat', sans-serif;
+    color: #fff8f4;
+}
+.footer .copyright{ /*styling for the orientation of the copyright text*/
+    flex: 1;
+}
+/*styling for the mini icons of social media accounts in the footer section*/
+.footer .ftlink a #fb{ 
+    float: left;
+    margin-right: 2em;
+}
+.footer .ftlink a #twt{ 
+    float: left;
+    margin-right: 2em;
+}
+.footer .ftlink a #ig{ 
+       float: left;
+    margin-right: 2em;
+}
+/*styling for the animation of the mini icons of social media accounts in the footer section*/
+.footer .ftlink a{
+    opacity: 1;
+    transition: 0.2s;
+}
+.footer a:hover{
+    opacity: 0.5; 
+    transition: 0.4s;
+}
+.rounded{ /*styling for the border-radius of the mini icons of social media accounts in the footer section */
+    border-radius: 100px;
+    border: #ffffff 4px solid;
+}
+.rounded2{ /*styling for the border-radius of the image used for my personal information in page5*/
+    border-radius: 50px;
+}
+.rounded3{ /*styling for the border-radius of the images used for the other two members in page5*/
+    border-radius: 50px;
+    border: #224650 5px solid;
+}
+/*styling for all sections*/
+section{
+    background-image: url(images/pageandsectionbg.png);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
